@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Agendamemto</legend>
+            <label for="name">Nome <span>*</span></label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome">
+
+            <label for="number">Idade <span>*</span></label>
+            <input type="number" id="idade" name="idade" placeholder="Maior de 18 anos" required min="18">
+
+            <label for="number">Telefone <span>*</span></label>
+            <input type="tel" id="telefone" name="telefone" required pattern="[0-9]{2}-9[0-9]{3}-[0-9]{4}" placeholder="Ex:11-9999-9999">
+
+            <label for="genero">Gênero</label>
+            <input type="radio" name="genero" value="Masculino"ckecked>Masculino
+            <input type="radio" name="genero" value="Feminino">Feminino
+
+            <label for="data-nascimento">Data de Nascimento</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" min="01-01-1900" max="01-01-2005" required>
+
+            <label for="horario-atendimento">Horário de Atendimento <span>*</span></label>
+            <input type="time" id="horario-atendimento" name="horario-atendimento" required min="07:00" max="17:00">
+
+
+            <label for="hobbies">Hobbies (selecione pelo menos 7)</label>
+            <select id="hobbies" name="hobbies" multiple>
+                <option value="Esportes">Esportes</option>
+                <option value="Leitura">Leitura</option>
+                <option value="Música">Música</option>
+                <option value="Arte">Arte</option>
+                <option value="Viagens">Viagens</option>
+                <option value="Culinária">Culinária</option>
+                <option value="Dança">Dança</option>
+            </select>
+
+            <label for="cor-preferida">Cor Preferida (selecione pelo menos 7)</label>
+            <select id="cor-preferida" name="cor-preferida" multiple>
+                <option value="Azul">Azul</option>
+                <option value="Vermelho">Vermelho</option>
+                <option value="Verde">Verde</option>
+                <option value="Amarelo">Amarelo</option>
+                <option value="Roxo">Roxo</option>
+                <option value="Laranja">Laranja</option>
+                <option value="Rosa">Rosa</option>
+            </select>
+
+            <div id="buttons">
+                <button type="submit" id="enviar">Enviar</button>
+                <button type="reset" id="limpar">Limpar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
