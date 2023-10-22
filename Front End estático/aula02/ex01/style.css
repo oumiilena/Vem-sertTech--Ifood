@@ -1,0 +1,28 @@
+body {
+    background-color: #F2CB05;
+    font-family: sans-serif;
+    margin: 10px;
+    padding: 20px;
+}
+
+h2{
+    background-color: #D9A404;
+    color: rgb(121, 82, 10);
+
+}
+
+.ListaCompras {
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+    background-color: #BF7F5A;
+}
+
+.TrocarLampada {
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+    background-color: #BF7F5A;
+    
+}
+
